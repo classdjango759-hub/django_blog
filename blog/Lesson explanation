@@ -1,0 +1,139 @@
+- View function
+- Register/Configure the view function in your urls.py
+urlpatterns = [
+    path("name of the route", view function, name="pointer of the route")
+    path("", homepage, name='home-page')
+]
+
+
+Accept input via a form
+- Provide the user with the form
+- Check if the user hit the submit button # False
+    - Collect the data via request.POST and attach it to the form
+    - Check if the data input is valid
+        - Save the data into the database
+        - Redirect to homepage or to read full content
+- Display the page to the user
+
+
+Article Page
+- Capture the ID of the blog post
+- Compare the ID captured with all blog IDs
+- If a blog post with the ID captured is found:
+    - Render a article template
+- Redirect to not-found page
+
+
+
+
+
+
+
+
+- Implementation of delete button 
+- User Authentication
+    - Authentication: is the process of identifying a user in order to grant them an access to use the website.
+    - Authorization: is the process of verifying whether the authenticated user can access resources.
+- Database Relationship 
+    - One-to-many - ForeignKey
+    - One-to-one - OneToOneField
+    - Many-to-many - ManyToManyField
+
+
+
+
+Imagine we have a newspaper with the headline "A Protagnist in Hike" reported by Jasmine, Kali, and Mary
+
+Jasmine -> A Protagnist in Hike, ....
+Kali -> A Protagnist in Hike, ....
+Mary -> A Protagnist in Hike, ...
+
+
+
+
+Discussion Hour
+
+- A man owns 5 dogs. You have a table named "human", and other table named 'dog'. To establish a relationship, what is the suitable type of relationship to consider?
+
+            Herry (One)
+            |
+-------------------------------------------------
+|           |                                   |
+D1          D2          D3      D4      D5 (Many)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CharField -> ForeignKey
+
+
+Delete all the migration files
+Flush the db
+
+<!-- Two options -->
+Try to make a new migration and then migrate ✅
+
+- Danger Zone
+Delete db.sqlite3 file
+
+
+
+
+
+
+
+
+
+
+
+
+
+Edit a blog post:
+
+
+- Get the id of the blog post ✅
+- Filter the blog posts in the db with that ID ✅
+- If no blog post is found: ✅
+    - return "Not Found" ✅
+- Get the first blog post from the filtered blog posts ✅
+- Use the BlogForm(instance=blog_post) ✅
+- Listen to whether the user submit a form ✅
+    - Write BlogForm(request.POST, instance=blog_post) ✅
+    - If form valid: ✅
+        - Save the form and redirect ✅
+- Display the page 
+------------------------
+def edit_post(request, pk):
+
+    blog_posts = Blog.objects.filter(id=pk)
+
+    if not blog_posts:
+        return HttpResponse("Not found")
+    
+    first_blog = blog_posts.first()
+
+    form = BlogForm(instance=first_blog)
+
+    if request.method == 'POST':
+        first_blog.delete()
+    
+    return render(request, 'app_folder/edit.html', context={"form": form})
+
+
+
+A decorator is a design pattern that is used to modify or extend the behaviour of
+function, method, or class without changing the metadata/information of 
+the original source.
+
+
+

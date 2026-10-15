@@ -1,0 +1,65 @@
+{% extends 'daily_news/base.html' %}
+
+{% block content %}
+<div style="padding-inline: 5px; ">
+    <div style="border: 1px solid white; padding: 5px; padding-block:1em; border-radius: 2px;">
+        <div style="display:flex; gap: 1em; align-items: center">
+            <img
+            style="border-radius: 2em"
+            src="https://picsum.photos/200/300" width="100" height="100" />
+            <div>
+            <h3>{{user.username}}</h3>
+            <a href="mailto:{{user.email}}" style="color: gray">{{user.email}}</a>
+            <p>
+            <small>{{blogs.count}} posts </small>
+            </p>
+        </div>
+        </div>
+    </div>
+    <hr/>
+        <!-- Main Container -->
+    <div class="container">
+      <div class="content-grid">
+        <!-- Posts Feed with all required properties -->
+        <main class="posts-feed">
+              {% for blog in blogs %}
+                <!-- Blog Article 1 -->
+                <article class="post-card">
+                  <!-- 1. Headline -->
+                  <h2>{{blog.headline}}</h2>
+
+                  <!-- 2 & 3. Author & Published At -->
+                  <div class="post-meta">
+                    <span class="author">{{blog.author}}</span>
+                    <span class="dot">•</span>
+                    <time datetime="2026-09-08">{{blog.published_at}}</time>
+                  </div>
+
+                  <!-- 4. Body Excerpt -->
+                  <div class="post-body">
+                    <p>
+                      {{blog.body|truncatechars:30}}
+                  </p>
+                  </div>
+
+                  <!-- Read More Link -->
+                  <div class="post-footer">
+                    {% comment %} <a href="blog/{{blog.pk}}" class="read-more"> {% endcomment %}
+                    <a href="{% url 'read-blog' blog.pk  %}" class="read-more">
+                      Read Essay <span class="arrow">→</span>
+                    </a>
+                  </div>
+                </article>
+                {% empty%}
+                <p>It is empty here. <i>La Peace</i></p>
+                <img 
+                src="https://imgs.search.brave.com/_sQwiuzap2aLNA3WHaXgwPJXTQn2b9y9ybzAEBMeuFc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMyLmFscGhhY29k/ZXJzLmNvbS8xNDEv/dGh1bWItNDQwLTE0/MTI5Mzkud2VicA"
+                 
+                />
+          {%endfor%}
+        </main>
+
+      </div>
+    </div>
+</div>
+{% endblock content %}

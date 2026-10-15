@@ -1,0 +1,475 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-09-16T11:41:44.869Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Blog object (5)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Headline\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 3,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 3,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 3,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 3,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 2,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 2,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 2,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 2,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add blog",
+    "content_type": 7,
+    "codename": "add_blog"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change blog",
+    "content_type": 7,
+    "codename": "change_blog"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete blog",
+    "content_type": 7,
+    "codename": "delete_blog"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view blog",
+    "content_type": 7,
+    "codename": "view_blog"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$l7q0UFzN5O0gnyUKj4xYWh$2++GDpX6MWhI8shBD9TwF/lnoR+AlLT0HQCDB6aRufU=",
+    "last_login": "2026-10-12T11:38:10.409Z",
+    "is_superuser": true,
+    "username": "django",
+    "first_name": "",
+    "last_name": "",
+    "email": "test@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-09-16T11:16:40.331Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$zSZM7SUE3M8uKNf9gW2uPF$NneYDgizJaL42TNinB7A0fc5th5T4FnTRa3JVNuKnIY=",
+    "last_login": "2026-10-13T11:47:45.368Z",
+    "is_superuser": false,
+    "username": "author0",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-10-12T11:57:37.179Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$jaJl4LuIEDtueqerWVRldE$Z6eatx8rrMh9dprUg49i778CDwmjnEueFUNpjMmqz0M=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "lo",
+    "first_name": "",
+    "last_name": "",
+    "email": "lo@mail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-10-13T12:46:17.712Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$S3O5KAA2pnY7eO9h5ivHTi$CmsnLI0aOIxCmqPkI4o942YJb7k9fQyFyK+Cdc3c4F8=",
+    "last_login": "2026-10-13T12:56:28.408Z",
+    "is_superuser": true,
+    "username": "behold",
+    "first_name": "",
+    "last_name": "",
+    "email": "behold@mail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-10-13T12:55:43.537Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "daily_news",
+    "model": "blog"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "gnbgqvh7ewqf1ozjt1y4giwgbn1ff1pu",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQAP-yZ0OWAoX26N03NLuwlaqBpLQn499Nkx70OjOZN0y0b3nam6zTkmAEDZdfxhSfUg6RHlTuVcVatnVhdSTqtE3dapLX9Wz_BplahhE6j5rJOjvPCcUw94xIxjnh0BlmTPMgYgevOTnsrNdm6GOwHlmLjgE-X-f6N7g:1xGDzR:33qEsw4H1t5CrWoBcQamcAj5vispEkHEQdiNEfYqpAA",
+    "expire_date": "2026-10-26T11:14:45.228Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "j97mid2m1n5kroi9vssbqua328odhgwz",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pBCkem4dO8ZyAwMUjU0Ke3KeHdD0oVu_3vvv1WgfSthb7KGOamLsur0uzHFp9QO0oPqfdFxqds6s-6KPmjTtyXJ63q4fweFWul1EnRsBRnZO7RAnpBdnoSz4WFEAQZjaBRDcE4AHMH4gR1NTjKQ-nwBA_44nQ:1xGEfZ:DFE72AyTfxIh48Hg6_Ej8JuEjmVPYWNNaNUWT89vdvk",
+    "expire_date": "2026-10-26T11:58:17.747Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "p3t0qkc8gnw7hbq5rqak6ugufvzowffm",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQAP-yZ0OWAoX26N03NLuwlaqBpLQn499Nkx70OjOZN0y0b3nam6zTkmAEDZdfxhSfUg6RHlTuVcVatnVhdSTqtE3dapLX9Wz_BplahhE6j5rJOjvPCcUw94xIxjnh0BlmTPMgYgevOTnsrNdm6GOwHlmLjgE-X-f6N7g:1xGE7I:LRzs3P7ZCUI96aSqZ83oN_Gqz8sHvN-aHuJzxyRitxs",
+    "expire_date": "2026-10-26T11:22:52.791Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "qqi58cwfw6wnwqjd05hdzybbr8io5xdd",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAMAP_iGUUhTkjckZ03VE7skgJqpaadEH9HlTrAene6N_S8rbXfmi79KNCBh9Mvy1yeOu1CHjzdZ1PmaV3GbPbEHLaZ2yz6uh7t36Byq9BBdDkgMZKPjL5QoJQ1sk1W8XJOJEGjKCZE78ogogM5lIAukbOaGT5fyt43jQ:1xGc3Q:xcfMm3l2oyGwEMWxDAnBmiooGRaL5-mbZxTc7UpyBwU",
+    "expire_date": "2026-10-27T12:56:28.416Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "v39t4fny37j8bhh6nsfuctadetbqoch1",
+  "fields": {
+    "session_data": ".eJxVjLsOwjAMAP_FM4rq1klDR_Z-QxQ7DimgVOpjQvw7qtQB1rvTvSHEfSthX3UJU4IBEC6_jKM8tR4iPWK9z0bmui0TmyMxp13NOCd93c72b1DiWmCAnPGaG85txp7IJ6c2CXpRVLbWprYRRnIdkyPEzgs3jNkJU6_E5ODzBfb3OCM:1x6nhn:X8TrRx5SmGJv1K1V25RbihYH6w8Q4yIp9REw9U_18Nc",
+    "expire_date": "2026-09-30T11:21:35.123Z"
+  }
+},
+{
+  "model": "daily_news.blog",
+  "pk": 5,
+  "fields": {
+    "headline": "The Art of Writing Clean Code 2",
+    "body": "Writing clean code is not just about making it work; it is about making it maintainable and readable for others. Start by using meaningful variable names, keeping your functions small, and writing thorough tests. When you treat your code as a craft, you drastically reduce technical debt and make future collaboration seamless.",
+    "author": 1,
+    "published_at": "2026-09-16T11:41:44.867Z"
+  }
+},
+{
+  "model": "daily_news.blog",
+  "pk": 6,
+  "fields": {
+    "headline": "Blog1",
+    "body": "Body",
+    "author": 1,
+    "published_at": "2026-09-14T11:56:39.079Z"
+  }
+},
+{
+  "model": "daily_news.blog",
+  "pk": 7,
+  "fields": {
+    "headline": "Django",
+    "body": "Hall",
+    "author": 1,
+    "published_at": "2026-10-12T11:10:18.832Z"
+  }
+},
+{
+  "model": "daily_news.blog",
+  "pk": 8,
+  "fields": {
+    "headline": "Hello",
+    "body": "World",
+    "author": 1,
+    "published_at": "2026-10-12T11:27:35.408Z"
+  }
+}
+]
