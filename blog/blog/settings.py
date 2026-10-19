@@ -29,7 +29,7 @@ SECRET_KEY = getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["127.0.0.1"]
+ALLOWED_HOSTS = ["127.0.0.1", "django-blog-7t3s.onrender.com"]
 
 
 # Application definition
@@ -132,3 +132,21 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
+
+
+# EMAIL_HOST = "smtp.google.com"
+# EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_USER = "email"
+# EMAIL_PASSWORD = "password"
+
+
+
+
+
+
+
+
+
+

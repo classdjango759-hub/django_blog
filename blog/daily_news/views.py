@@ -139,3 +139,12 @@ def profile(request):
     # and assign it to a variable called 'user_posts'
     user_posts = user.blog_set.all()
     return render(request, "registration/profile.html", context={'blogs': user_posts})
+
+
+
+
+
+# python-dotenv: To hides sensitive credentials in our code 
+# gunicorn: production server
+
+# pip install python-dotenv gunicorn
